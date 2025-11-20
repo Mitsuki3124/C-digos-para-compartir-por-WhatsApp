@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos HTML de Amor ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .hearts-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.3;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); }
+            50% { transform: translateY(-20vh) rotate(180deg); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.3em;
+            margin-top: 15px;
+        }
+
+        .description {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease;
+        }
+
+        .description p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .codes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .code-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .code-card::before {
+            content: '❤️';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 100px;
+            opacity: 0.05;
+            transform: rotate(15deg);
+        }
+
+        .code-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .code-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .code-title {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .code-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+            font-size: 1.1em;
+            padding: 20px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .codes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts-background" id="heartsContainer"></div>
+
+    <div class="container">
+        <header>
+            <h1>💖 Los mejores Mensajes Interactivos HTML para compartir por WhatsApp 💖</h1>
+            <p class="subtitle">Descarga plantillas románticas gratis</p>
+        </header>
+
+        <div class="description">
+            <p>¡Bienvenido a la colección más romántica de códigos HTML! 💕 Aquí encontrarás hermosas plantillas con temática de amor que puedes descargar completamente gratis. Perfectas para dedicar a esa persona especial, crear tarjetas virtuales o simplemente expresar tus sentimientos de manera creativa.</p>
+        </div>
+
+        <div class="codes-grid">
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">💖  Vitaminas del Amor 💊</h3>
+                <p class="code-description">Enviale a tu pareja este emocionante detalle para decirle que te hace falta la vitamina A, B, C y D de una forma divertida.</p>
+                <a href="https://www.mediafire.com/file/j705uwhr49cdpfe/VItaminas-del-Amor.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">💖 Galaxia de Amor</h3>
+                <p class="code-description">Un mensaje brillante con corazones flotantes y estrellas animadas. Ideal para dedicar a alguien especial.</p>
+                <a href="https://www.mediafire.com/file/ig1qt6dyal7xaf9/Galaxia_del_Amor.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">🌻Ramo de Flores🌸</h3>
+                <p class="code-description">Regalale un hermoso ramo de flores a tu amor.</p>
+                <a href="https://www.mediafire.com/file/p7f2q5vb4yp0zv8/Ramo_de_Flores.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">💖 Mi Enojona 😡</h3>
+                <p class="code-description">Regalale un hermoso regalo digital con lindos gifs y audio.</p>
+                <a href="https://www.mediafire.com/file/61t7skz7clblgv4/Mi-Enojona.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">😢 Me Perdonas Mi Amor 🐧</h3>
+                <p class="code-description">Pídele perdón a tu novi@ con divertidos gifs de pingüinos.</p>
+                <a href="https://www.mediafire.com/file/54msxoubfoijx91/MePerdonas-Mi-Amor.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+
+            <div class="code-card">
+                <div class="code-icon"></div>
+                <h3 class="code-title">🔮 Esfera Musical 🎵</h3>
+                <p class="code-description">Crear una esfera de cristal viva que vibra, gira y respira con la música y foto seleccionada.</p>
+                <a href="https://www.mediafire.com/file/gw4kv5dg6rbaueu/Esfera_Musical.html/file" class="download-btn">📥 Descargar</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>❤️ Hecho con amor para compartir con amor ❤️</p>
+            <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">Todos los códigos son gratuitos y personalizables</p>
+        </footer>
+    </div>
+
+    <script>
+        // Crear corazones flotantes en el fondo
+        const container = document.getElementById('heartsContainer');
+        const hearts = ['❤️', '💕', '💖', '💗', '💘', '💝'];
+        
+        for (let i = 0; i < 15; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            heart.style.animationDuration = (10 + Math.random() * 10) + 's';
+            container.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
